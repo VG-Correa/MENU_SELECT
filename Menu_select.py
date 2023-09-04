@@ -61,11 +61,9 @@ def Key():
         
                 
         if "\x1b" in key or "b'\\x00'" in key or "b'\\xe0'" in key:
-            # input('botão: ' + str([key]))
             
             for i in range(0,1):
                 key = key + str(getch())
-            # input("Botão: " + str([key]))
 
         # print(key)
         # time.sleep(0.5)
