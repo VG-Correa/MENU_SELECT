@@ -1,9 +1,9 @@
-import msvcrt
 import sys
 import os
 from .key_dic import key_dic as kc
 import termios
 import tty
+import time
 
 class Linux_TerminalController:
         
@@ -23,7 +23,7 @@ class Linux_TerminalController:
             ch = sys.stdin.read(1)
         finally:
             termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-        return ch
+        return f"{ch}"
     
     def key(self):
         
@@ -34,7 +34,10 @@ class Linux_TerminalController:
             
             for i in range(0,1):
                 key = key + str(self.getch())
-        
+
+        print(key)
+        time.sleep(0.25)
+
         try:
             key = kc[key]
         except:
@@ -43,4 +46,4 @@ class Linux_TerminalController:
         return key
 
     def clear(self):
-        os.system('cls')
+        os.system('clear')

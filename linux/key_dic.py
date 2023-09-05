@@ -1,19 +1,17 @@
 key_dic = {
     
-    "b'\\x00'b'H'": "KeyUp",
-    "b'\\xe0'b'H'": "KeyUp",
+    "\x1b[A": "KeyUp",
+    "A": "KeyUp",
     
-    "b'\\xe0'b'P'": "KeyDown",
-    "b'\\x00'b'P'": "KeyDown",
+    '\x1b[B': "KeyDown",
+    'B': "KeyDown",
     
-    "b'\\x00'b'K'": "KeyLeft",
-    "b'\\xe0'b'K'": "KeyLeft",
+    '\x1b[D': "KeyLeft",
+    'D': "KeyLeft",
     
-    "b'\\x00'b'M'": "KeyRight",
-    "b'\\xe0'b'M'": "KeyRight",   
+    '\x1b[C': "KeyRight",
+    'C': "KeyRight",   
     
-    "b'\\r'": "Enter",
-    
-    "b' '": "BackSpace"
+    "\r": "Enter",
     
 }

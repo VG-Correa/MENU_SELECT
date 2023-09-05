@@ -14,6 +14,7 @@ class Os_Terminal_Controller:
         if self.sysOp == "Windows":
             from windows import windows_terminal_controller
             self.terminal = windows_terminal_controller.Windows_TerminalController()
+            
         elif self.sysOp == "Linux":
             from linux import linux_terminal_controller
             self.terminal = linux_terminal_controller.Linux_TerminalController()

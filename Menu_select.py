@@ -5,7 +5,7 @@ import os_terminal_controller as ostc
 
 TERMINAL = ostc.Os_Terminal_Controller()
         
-class Menu_seleção:
+class Menu_select:
     def __init__(self,cabeçalho,
                  limite_opçoes=10,
                  texto_seleção = ['negrito','vermelho','cinza'],
@@ -115,5 +115,5 @@ class Menu_seleção:
                 maior_sessao += 1
                 menor_sessao += 1
             
-menu = Menu_seleção(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','verde'])
+menu = Menu_select(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','verde'])
 print(menu.options(descrição='Essa é a descrição',opções=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
