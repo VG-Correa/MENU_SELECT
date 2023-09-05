@@ -1,3 +1,4 @@
+# Linux
 key_dic = {
     
     "\x1b[A": "KeyUp",

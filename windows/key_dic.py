@@ -1,3 +1,4 @@
+#Windows
 key_dic = {
     
     "b'\\x00'b'H'": "KeyUp",

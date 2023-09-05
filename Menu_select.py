@@ -115,5 +115,5 @@ class Menu_select:
                 maior_sessao += 1
                 menor_sessao += 1
             
-menu = Menu_select(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','verde'])
-print(menu.options(descrição='Essa é a descrição',opções=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
+# menu = Menu_select(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','verde'])
+# print(menu.options(descrição='Essa é a descrição',opções=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))

@@ -1,6 +1,6 @@
 import Menu_select as ms
 
-menu = ms.Menu_seleção(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','verde'])
+menu = ms.Menu_select(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','azul'])
 opt = ['Logar','Cadastrar','Sair']
 escolha = menu.options(descrição='Essa é a descrição',opções=opt)
 
