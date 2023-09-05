@@ -1,9 +1,6 @@
-import sys
-import os
-import time
 import platform
 
-class Os_Controller:
+class Os_Terminal_Controller:
         
     def __init__(self):
         self.sysOp = self.Get_os()
@@ -22,5 +19,11 @@ class Os_Controller:
     def ReadKey(self):
         return self.terminal.key()
     
-controller = Os_Controller()
-print(controller.ReadKey())
+    def clear(self):
+        self.terminal.clear()
+    
+    def hide_cursor(self):
+        self.terminal.hide_cursor()
+    
+    def show_cursor(self):
+        self.terminal.show_cursor()

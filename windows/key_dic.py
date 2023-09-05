@@ -12,6 +12,8 @@ key_dic = {
     "b'\\x00'b'M'": "KeyRight",
     "b'\\xe0'b'M'": "KeyRight",   
     
-    "b'\\r'": "enter",
+    "b'\\r'": "Enter",
+    
+    "b' '": "BackSpace"
     
 }

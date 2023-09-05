@@ -1,7 +1,6 @@
-import time
 import msvcrt
-import platform
-import ctypes
+import sys
+import os
 from .key_dic import key_dic as kc
 
 class Windows_TerminalController:
@@ -19,20 +18,21 @@ class Windows_TerminalController:
         return tecla
     
     def key(self):
-        while True:
-            key = '' 
-            key = key + str(self.getch())
-                
-            if "\x1b" in key or "b'\\x00'" in key or "b'\\xe0'" in key:
-                
-                for i in range(0,1):
-                    key = key + str(self.getch())
-
-            print(key)
+        
+        key = '' 
+        key = key + str(self.getch())
             
-            try:
-                key = kc[key]
-            except:
-                key = None
+        if "\x1b" in key or "b'\\x00'" in key or "b'\\xe0'" in key:
+            
+            for i in range(0,1):
+                key = key + str(self.getch())
+        
+        try:
+            key = kc[key]
+        except:
+            key = None
 
-            return key
+        return key
+
+    def clear(self):
+        os.system('cls')
