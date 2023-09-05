@@ -100,7 +100,7 @@ class Menu_select:
             if index_selecionado < 0:
                 index_selecionado = ultimo
                 maior_sessao = ultimo
-                menor_sessao = ultimo - limite_opçoes
+                menor_sessao = ultimo - limite_opçoes +1
                
             elif index_selecionado > ultimo:
                 index_selecionado = 0
