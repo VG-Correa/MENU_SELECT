@@ -118,3 +118,6 @@ elif select == 2:
 else:
     print("Opção selecionada: " + opções[select])
 ```
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
