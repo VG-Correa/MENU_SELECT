@@ -1,7 +1,7 @@
 import sys
 import os
 import time
-from .os_terminal_controller import Os_Terminal_Controller as ostc
+from os_terminal_controller import Os_Terminal_Controller as ostc
 
 TERMINAL = ostc()
         

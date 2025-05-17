@@ -6,4 +6,4 @@ __email__ = "v.victorgabriel2014@gmail.com"
 
 
 # Importe aqui as classes/funções que você quer expor
-from .core import *  # substitua pelo nome real do seu módulo
+from Menu_select import Menu_select
