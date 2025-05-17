@@ -1,4 +1,4 @@
-from menu_select import Menu_select as ms
+from .menu_select.Menu_select import Menu_select as ms
 
 menu = ms(cabeçalho='cabeçalho',texto_seleção = ['negrito','vermelho','azul'])
 opt = ['Logar', 'sair']

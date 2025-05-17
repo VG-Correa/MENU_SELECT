@@ -6,4 +6,4 @@ __email__ = "v.victorgabriel2014@gmail.com"
 
 
 # Importe aqui as classes/funções que você quer expor
-from Menu_select import Menu_select
+from .Menu_select import Menu_select
