@@ -5,24 +5,27 @@ Esse menu de seleção para terminal foi criado para suprir a necessidade de flu
 
 **Descrição técnica:**
 
-Este programa contém duas funções e uma classe. A função **cls()** é responsável por limpar a tela do terminal. A função **getch()** captura a tecla pressionada pelo usuário sem exibir o caractere digitado no terminal. A classe **Menu_seleção** é responsável por criar um menu de seleção de opções no terminal, permitindo que o usuário navegue pelas opções usando as setas de direção e selecione uma opção pressionando a tecla Enter.
+Este programa contém duas funções e uma classe. A função **cls()** é responsável por limpar a tela do terminal. A função **getch()** captura a tecla pressionada pelo usuário sem exibir o caractere digitado no terminal. A classe **Menu_select** é responsável por criar um menu de seleção de opções no terminal, permitindo que o usuário navegue pelas opções usando as setas de direção e selecione uma opção pressionando a tecla Enter.
 
-A classe **Menu_seleção** possui um construtor **__init__()** que define as opções de formatação de texto para o cabeçalho e as opções de menu, além de outras configurações. A classe tem também o método **Set_Paleta()** que permite definir um conjunto personalizado de opções de formatação de texto para o menu.
+A classe **Menu_select** possui um construtor **__init__()** que define as opções de formatação de texto para o cabeçalho e as opções de menu, além de outras configurações. A classe tem também o método **Set_Paleta()** que permite definir um conjunto personalizado de opções de formatação de texto para o menu.
 
-O método **options()** da classe **Menu_seleção** é responsável por exibir o menu e permitir que o usuário navegue pelas opções e selecione uma delas. Esse método recebe como parâmetros o **cabeçalho**, a **descrição** e as **opções** de menu a serem exibidas. O método usa a função **cls()** para limpar a tela e, em seguida, exibe o **cabeçalho**, a **descrição** e as **opções** de menu no terminal. O método permite que o usuário navegue pelas opções de menu usando as teclas de seta para cima e para baixo. Quando o usuário seleciona uma opção, pressionando a tecla **Enter**, o método retorna o **índice** da opção selecionada.
+O método **options()** da classe **Menu_select** é responsável por exibir o menu e permitir que o usuário navegue pelas opções e selecione uma delas. Esse método recebe como parâmetros o **cabeçalho**, a **descrição** e as **opções** de menu a serem exibidas. O método usa a função **cls()** para limpar a tela e, em seguida, exibe o **cabeçalho**, a **descrição** e as **opções** de menu no terminal. O método permite que o usuário navegue pelas opções de menu usando as teclas de seta para cima e para baixo. Quando o usuário seleciona uma opção, pressionando a tecla **Enter**, o método retorna o **índice** da opção selecionada.
 
-Para utilizar em seu código, coloque o arquivo "Menu_seleção.py" na pasta de seu projeto de forma que consiga importa-lo.
-Importe o menu de seleção, aconselho colocar o apelido como **ms**
+Para utilizar a biblioteca, instale o pacote utilizando o comando:
 
+```cmd
+pip install menu_select
+```
+
+para importar a biblioteca, aconselhamos:
 ```python
-from Menu_seleção import Menu_seleção as ms
+from menu_select import Menu_select as ms
 ```
 
 Defina um cabeçalho que sempre irá aparecer nas telas de navegação:
 ```python
 cabecalho = "B.R.A.I.N.S"
 ```
-
 Instancie um objeto do tipo Menu_seleção que receberá todas as configurações básicas para seu menu funcionar.
 
 ```python
@@ -90,9 +93,11 @@ Função **options**
 
 O método vai retornar o index da lista informada de opções.
 
+Obs: Se for passado um objeto que não seja texto ou número dentro da lista de opções, o valor mostrado na tela será o retornado na função especial __str__ daquele objeto.
+
 **Exemplo completo:**
 ```python
-from Menu_seleção import Menu_seleção as ms
+from menu_select import Menu_select as ms
 
 cabeçalho = "B.R.A.I.N.S"
 
