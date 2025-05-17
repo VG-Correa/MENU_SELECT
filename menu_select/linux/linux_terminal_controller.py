@@ -1,6 +1,6 @@
 import sys
 import os
-import key_dic as kc
+from .key_dic import key_dic as kc
 
 import termios
 import tty

@@ -12,18 +12,14 @@ class Os_Terminal_Controller:
     
     def Set_terminal(self):
         if self.sysOp == "Windows":
-            try:
-                from .windows.windows_terminal_controller import Windows_TerminalController
-            except:
-                from windows.windows_terminal_controller import Windows_TerminalController
+            
+            from .windows.windows_terminal_controller import Windows_TerminalController
+            
             
             self.terminal = Windows_TerminalController()
             
         elif self.sysOp == "Linux":
-            try:
-                from .linux.linux_terminal_controller import Linux_TerminalController
-            except:
-                from linux.linux_terminal_controller import Linux_TerminalController
+            from .linux.linux_terminal_controller import Linux_TerminalController
 
             self.terminal = Linux_TerminalController()
             
